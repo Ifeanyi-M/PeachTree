@@ -1,0 +1,45 @@
+﻿@model RegistrationRequestDTO
+
+<form method="post">
+	<div class="card shadow  border-success-subtle  p-4 pt-4 m-auto mt-5 w-50   ">
+		<div class="card-header bg-warning-subtle  ml-0 py-3 px-3">
+			<div class="row text-center mt-3">
+				<h2>Register</h2>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div asp-validation-summary="All" class="text-danger">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-6 offset-md-3 pb-2">
+				<input asp-for="Email" class="form-control" placeholder="Enter email ..." />
+				<span asp-validation-for="Email" class="text-danger" />
+			</div>
+			<div class="col-12 col-md-6 offset-md-3 pb-2">
+				<input asp-for="Name" class="form-control" placeholder="Enter your name ..." />
+				<span asp-validation-for="Name" class="text-danger" />
+			</div>
+			<div class="col-12 col-md-6 offset-md-3 pb-2">
+				<input asp-for="PhoneNumber" class="form-control" placeholder="Enter phone number ..." />
+				<span asp-validation-for="PhoneNumber" class="text-danger" />
+			</div>
+			<div class="col-12 col-md-6 offset-md-3 pb-2">
+				<input asp-for="Password" class="form-control" placeholder="Enter password ..." />
+				<span asp-validation-for="Password" class="text-danger"/>
+			</div>
+			<div class="col-12 col-md-6 offset-md-3 pb-2">
+				<select asp-for="RoleName" class="form-select" asp-items="@ViewBag.RoleList">
+					<option disabled selected>--Select Role--</option>
+				</select>
+			</div>
+			<div class="col-6 offset-3 pb-2">
+				<button type="submit" class="form-control btn btn-outline-warning" value="Submit">Register</button>
+			</div>
+		</div>
+	</div>
+</form>
+
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}

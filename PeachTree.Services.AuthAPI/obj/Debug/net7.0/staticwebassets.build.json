@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "h48TRW9DA3EHYXvykrNn6xQ8a4NSfFhqe2EBEeyTLc8=",
+  "Source": "PeachTree.Services.AuthAPI",
+  "BasePath": "_content/PeachTree.Services.AuthAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

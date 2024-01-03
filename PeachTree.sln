@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{A7517971-94CF-4B66-BBBD-81D6B807DBA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{0E692A7D-5CD7-438D-AF30-F98977A9EDE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{A388F5F2-92CF-4EB2-8E26-669239F5A5EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{10937E19-E316-4704-AE6D-7EA133149EF9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeachTree.Services.CouponAPI", "PeachTree.Services.CouponAPI\PeachTree.Services.CouponAPI.csproj", "{89922FB7-0C75-45F1-9CE6-42A25DD23791}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeachTree.Web", "PeachTree.Web\PeachTree.Web.csproj", "{16576689-F367-4F7A-834C-96EA8921C737}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeachTree.Services.AuthAPI", "PeachTree.Services.AuthAPI\PeachTree.Services.AuthAPI.csproj", "{341B4940-3775-4481-B44E-E6CA63141F42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeachTree.Services.ProductAPI", "PeachTree.Services.ProductAPI\PeachTree.Services.ProductAPI.csproj", "{AA047A34-8A45-4C29-AD81-604A6CF1FB1F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeachTree.Services.ShoppingCart", "PeachTree.Services.ShoppingCart\PeachTree.Services.ShoppingCart.csproj", "{C2B747DB-B0B6-48A1-9B39-513C8C07A44B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeachTree.Services.OrderAPI", "PeachTree.Services.OrderAPI\PeachTree.Services.OrderAPI.csproj", "{BD212ECB-065D-4565-A8A1-DE5A7E6E00C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89922FB7-0C75-45F1-9CE6-42A25DD23791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89922FB7-0C75-45F1-9CE6-42A25DD23791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89922FB7-0C75-45F1-9CE6-42A25DD23791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89922FB7-0C75-45F1-9CE6-42A25DD23791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16576689-F367-4F7A-834C-96EA8921C737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16576689-F367-4F7A-834C-96EA8921C737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16576689-F367-4F7A-834C-96EA8921C737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16576689-F367-4F7A-834C-96EA8921C737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{341B4940-3775-4481-B44E-E6CA63141F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{341B4940-3775-4481-B44E-E6CA63141F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{341B4940-3775-4481-B44E-E6CA63141F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{341B4940-3775-4481-B44E-E6CA63141F42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA047A34-8A45-4C29-AD81-604A6CF1FB1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA047A34-8A45-4C29-AD81-604A6CF1FB1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA047A34-8A45-4C29-AD81-604A6CF1FB1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA047A34-8A45-4C29-AD81-604A6CF1FB1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2B747DB-B0B6-48A1-9B39-513C8C07A44B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B747DB-B0B6-48A1-9B39-513C8C07A44B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B747DB-B0B6-48A1-9B39-513C8C07A44B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B747DB-B0B6-48A1-9B39-513C8C07A44B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD212ECB-065D-4565-A8A1-DE5A7E6E00C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD212ECB-065D-4565-A8A1-DE5A7E6E00C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD212ECB-065D-4565-A8A1-DE5A7E6E00C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD212ECB-065D-4565-A8A1-DE5A7E6E00C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{89922FB7-0C75-45F1-9CE6-42A25DD23791} = {10937E19-E316-4704-AE6D-7EA133149EF9}
+		{16576689-F367-4F7A-834C-96EA8921C737} = {A7517971-94CF-4B66-BBBD-81D6B807DBA6}
+		{341B4940-3775-4481-B44E-E6CA63141F42} = {10937E19-E316-4704-AE6D-7EA133149EF9}
+		{AA047A34-8A45-4C29-AD81-604A6CF1FB1F} = {10937E19-E316-4704-AE6D-7EA133149EF9}
+		{C2B747DB-B0B6-48A1-9B39-513C8C07A44B} = {10937E19-E316-4704-AE6D-7EA133149EF9}
+		{BD212ECB-065D-4565-A8A1-DE5A7E6E00C4} = {10937E19-E316-4704-AE6D-7EA133149EF9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34990E44-EF73-480F-8123-A561B62A529D}
+	EndGlobalSection
+EndGlobal

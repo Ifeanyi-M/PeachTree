@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\PeachTree.Services.AuthAPI.props" />
+</Project>
