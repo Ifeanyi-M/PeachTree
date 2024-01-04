@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "m9smktrZfTkjjsLTPKBjTOkdxm0JRumlPKP9PwCKFXM=",
+  "Source": "PeachTree.EmailAPI",
+  "BasePath": "_content/PeachTree.EmailAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

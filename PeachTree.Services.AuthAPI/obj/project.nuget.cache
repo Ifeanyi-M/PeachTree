@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lDKU1OkjMLb8vD0qkC1PhmF7X/oMAlm1li3aVjcILgOd/0h8a9LNIrdGrI8HlT39B37xie4O3xkYbRMB/pRctA==",
+  "dgSpecHash": "VnIufBB/DwrM8Vgcyti3YNzi5pyeKPie2wsE9GdClvb7BJelK0rRO3SghkzyJhwXrIs4RFEDWWM4lkOLngg1tQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\DECAGON\\source\\repos\\PeachTree\\PeachTree.Services.AuthAPI\\PeachTree.Services.AuthAPI.csproj",
   "expectedPackageFiles": [
@@ -53,6 +53,7 @@
     "C:\\Users\\DECAGON\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\DECAGON\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\DECAGON\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\DECAGON\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\DECAGON\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
     "C:\\Users\\DECAGON\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\DECAGON\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",

@@ -83,3 +83,5 @@ C:\Users\DECAGON\source\repos\PeachTree\PeachTree.Services.AuthAPI\obj\Debug\net
 C:\Users\DECAGON\source\repos\PeachTree\PeachTree.Services.AuthAPI\obj\Debug\net7.0\PeachTree.Services.AuthAPI.pdb
 C:\Users\DECAGON\source\repos\PeachTree\PeachTree.Services.AuthAPI\obj\Debug\net7.0\PeachTree.Services.AuthAPI.genruntimeconfig.cache
 C:\Users\DECAGON\source\repos\PeachTree\PeachTree.Services.AuthAPI\obj\Debug\net7.0\ref\PeachTree.Services.AuthAPI.dll
+C:\Users\DECAGON\source\repos\PeachTree\PeachTree.Services.AuthAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\DECAGON\source\repos\PeachTree\PeachTree.Services.AuthAPI\bin\Debug\net7.0\RabbitMQ.Client.dll
