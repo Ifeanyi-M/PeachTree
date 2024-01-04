@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "a3k48MECy6Q2Jr81EJpLKWg8JIehsE6CEwn++9OoHeI=",
+  "Source": "PeachTree.Services.OrderAPI",
+  "BasePath": "_content/PeachTree.Services.OrderAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

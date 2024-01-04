@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using PeachTree.Services.AuthAPI.Models.DTOs;
+using PeachTree.Services.AuthAPI.RabbitMQSender;
 using PeachTree.Services.AuthAPI.Services.IServices;
 
 namespace PeachTree.Services.AuthAPI.Controllers
@@ -10,14 +12,16 @@ namespace PeachTree.Services.AuthAPI.Controllers
 	public class AuthAPIController : ControllerBase
 	{
 		private readonly IAuthService _authService;
-
-		protected ResponseDTO _response;
-		public AuthAPIController(IAuthService authService)
+		private readonly IRabbitMQAuthMessageSender _rabbitMQAuthMessageSender;
+        private readonly IConfiguration _configuration;
+        protected ResponseDTO _response;
+        public AuthAPIController(IAuthService authService, IRabbitMQAuthMessageSender rabbitMQAuthMessageSender, IConfiguration configuration)
         {
-			_authService = authService;
-			_response = new();
-			
-		}
+            _authService = authService;
+            _response = new();
+            _rabbitMQAuthMessageSender = rabbitMQAuthMessageSender;
+            _configuration = configuration;
+        }
 
 
         [HttpPost("register")]
@@ -32,6 +36,7 @@ namespace PeachTree.Services.AuthAPI.Controllers
 				_response.Message = errorMessage;
 				return BadRequest(_response);
 			}
+			_rabbitMQAuthMessageSender.SendMessage(model.Email, _configuration.GetValue<string>("TopicAndQueueNames:RegisterUserQueue"));
 			return Ok(_response);
 		}
 
