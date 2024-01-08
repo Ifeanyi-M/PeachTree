@@ -12,11 +12,11 @@ namespace PeachTree.EmailAPI.Messaging
     public class RabbitMQAuthConsumer : BackgroundService
     {
         private readonly IConfiguration _configuration;
-        private readonly IEmailService _emailService;
+        private readonly EmailService _emailService;
         private IConnection _connection;
         private IModel _channel;
 
-        public RabbitMQAuthConsumer(IConfiguration configuration, IEmailService emailService)
+        public RabbitMQAuthConsumer(IConfiguration configuration, EmailService emailService)
         {
             _configuration = configuration;
             _emailService = emailService;

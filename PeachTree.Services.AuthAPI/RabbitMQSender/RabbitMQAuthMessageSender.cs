@@ -56,7 +56,7 @@ namespace PeachTree.Services.AuthAPI.RabbitMQSender
 
         private bool ConnectionExists()
         {
-            if(_connection == null)
+            if(_connection != null)
             {
                 return true;
             }

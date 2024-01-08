@@ -6,6 +6,7 @@ using Microsoft.OpenApi.Models;
 using PeachTree.Services.ShoppingCart;
 using PeachTree.Services.ShoppingCart.Data;
 using PeachTree.Services.ShoppingCart.Extensions;
+using PeachTree.Services.ShoppingCart.RabbitMQSender;
 using PeachTree.Services.ShoppingCart.Service;
 using PeachTree.Services.ShoppingCart.Service.IService;
 using PeachTree.Services.ShoppingCart.Utility;
@@ -35,6 +36,7 @@ builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICouponService, CouponService>();
+builder.Services.AddScoped<IRabbitMQCartMessageSender, RabbitMQCartMessageSender>();
 builder.Services.AddScoped<BackendApiAuthenticationHttpClientHandler>();
 
 builder.Services.AddControllers();

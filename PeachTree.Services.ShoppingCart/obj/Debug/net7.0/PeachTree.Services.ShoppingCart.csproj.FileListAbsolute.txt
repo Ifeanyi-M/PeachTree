@@ -78,3 +78,4 @@ C:\Users\DECAGON\source\repos\PeachTree\PeachTree.Services.ShoppingCart\obj\Debu
 C:\Users\DECAGON\source\repos\PeachTree\PeachTree.Services.ShoppingCart\obj\Debug\net7.0\PeachTree.Services.ShoppingCart.pdb
 C:\Users\DECAGON\source\repos\PeachTree\PeachTree.Services.ShoppingCart\obj\Debug\net7.0\PeachTree.Services.ShoppingCart.genruntimeconfig.cache
 C:\Users\DECAGON\source\repos\PeachTree\PeachTree.Services.ShoppingCart\obj\Debug\net7.0\ref\PeachTree.Services.ShoppingCart.dll
+C:\Users\DECAGON\source\repos\PeachTree\PeachTree.Services.ShoppingCart\bin\Debug\net7.0\RabbitMQ.Client.dll

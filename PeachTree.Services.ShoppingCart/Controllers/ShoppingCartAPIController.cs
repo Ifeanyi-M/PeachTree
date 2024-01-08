@@ -6,6 +6,7 @@ using PeachTree.Services.ShoppingCart.Data;
 using PeachTree.Services.ShoppingCart.Models;
 using PeachTree.Services.ShoppingCart.Models.Dto;
 using PeachTree.Services.ShoppingCart.Models.DTO;
+using PeachTree.Services.ShoppingCart.RabbitMQSender;
 using PeachTree.Services.ShoppingCart.Service.IService;
 using System.Reflection.PortableExecutable;
 
@@ -20,15 +21,20 @@ namespace PeachTree.Services.ShoppingCart.Controllers
         private readonly IProductService _productService;
         private readonly ICouponService _couponService;
         private ResponseDTO _response;
+        private readonly IRabbitMQCartMessageSender _messageSender;
+        private readonly IConfiguration _configuration;
+
 
         public ShoppingCartAPIController(AppDbContext db, IMapper mapper,
-            IProductService productService, ICouponService couponService)
+            IProductService productService, ICouponService couponService, IRabbitMQCartMessageSender messageSender, IConfiguration configuration)
         {
             _db = db;
             _mapper = mapper;
             _productService = productService;
             _couponService = couponService;
-            this. _response = new ResponseDTO();
+            this._response = new ResponseDTO();
+            _messageSender = messageSender;
+            _configuration = configuration;
         }
 
         [HttpGet("GetCart/{userId}")]
@@ -190,6 +196,23 @@ namespace PeachTree.Services.ShoppingCart.Controllers
             {
                 _response.Message = ex.Message.ToString();
                 _response.IsSuccess = true;
+            }
+            return _response;
+        }
+
+        [HttpPost("EmailCartRequest")]
+
+        public async Task<object> EmailCartRequest([FromBody] CartDTO cartDTO)
+        {
+            try
+            {
+                _messageSender.SendMessage(cartDTO, _configuration.GetValue<string>("TopicAndQueueNames:EmailShoppingCartQueue"));
+                _response.Result = true;
+            }
+            catch(Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.ToString();
             }
             return _response;
         }
