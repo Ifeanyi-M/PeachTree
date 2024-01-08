@@ -77,3 +77,5 @@ C:\Users\DECAGON\source\repos\PeachTree\PeachTree.EmailAPI\obj\Debug\net7.0\refi
 C:\Users\DECAGON\source\repos\PeachTree\PeachTree.EmailAPI\obj\Debug\net7.0\PeachTree.EmailAPI.pdb
 C:\Users\DECAGON\source\repos\PeachTree\PeachTree.EmailAPI\obj\Debug\net7.0\PeachTree.EmailAPI.genruntimeconfig.cache
 C:\Users\DECAGON\source\repos\PeachTree\PeachTree.EmailAPI\obj\Debug\net7.0\ref\PeachTree.EmailAPI.dll
+C:\Users\DECAGON\source\repos\PeachTree\PeachTree.EmailAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\DECAGON\source\repos\PeachTree\PeachTree.EmailAPI\bin\Debug\net7.0\RabbitMQ.Client.dll

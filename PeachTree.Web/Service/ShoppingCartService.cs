@@ -67,5 +67,15 @@ namespace PeachTree.Web.Service
 
             });
         }
+
+        public async Task<ResponseDTO?> EmailCart(CartDTO cartDto)
+        {
+            return await _baseService.SendAsync(new RequestDTO()
+            {
+                ApiType = SD.ApiType.POST,
+                Data = cartDto,
+                Url = SD.ShoppingCartBase + "/api/cart/EmailCartRequest"
+            });
+        }
     }
 }

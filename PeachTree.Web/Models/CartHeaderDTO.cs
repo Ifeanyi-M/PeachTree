@@ -9,7 +9,7 @@ namespace PeachTree.Web.Models
         public string? UserId { get; set; }
         public string? CouponCode { get; set; }
 
-       
+        public string Email { get; set; }
         public double Discount { get; set; }
 
       

@@ -9,8 +9,10 @@ namespace PeachTree.Web.Service.IServices
         Task<ResponseDTO?> RemoveFromCartAsync(int  cartDetailsId);
 
         Task<ResponseDTO?>ApplyCouponAsync(CartDTO cartDTO);
+        Task<ResponseDTO?> EmailCart(CartDTO cartDto);
 
 
 
-	}
+
+    }
 }
