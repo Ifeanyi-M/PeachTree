@@ -22,6 +22,12 @@ namespace PeachTree.Web.Controllers
             return View(await LoadCartBasedOnLoggedInUser());
         }
 
+        [Authorize]
+        public async Task<IActionResult> Checkout()
+        {
+            return View(await LoadCartBasedOnLoggedInUser());
+        }
+
         public async Task<IActionResult> Remove(int cartDetailsId)
         {
             var userId = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Sub)?

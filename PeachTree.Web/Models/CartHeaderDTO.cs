@@ -1,5 +1,7 @@
 ﻿
 
+using System.ComponentModel.DataAnnotations;
+
 namespace PeachTree.Web.Models
 {
     public class CartHeaderDTO
@@ -9,10 +11,18 @@ namespace PeachTree.Web.Models
         public string? UserId { get; set; }
         public string? CouponCode { get; set; }
 
-        public string Email { get; set; }
+        
         public double Discount { get; set; }
 
       
         public double CartTotal { get; set; }
+
+        [Required]
+        public string Name { get; set; }
+        
+        [Required]
+        public string Phone { get; set; }
+        [Required]
+        public string Email { get; set; }
     }
 }
